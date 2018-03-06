@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf8">
+    <title>K-Means on Image</title>
+    <link rel="stylesheet" href="basic.css" />
+</head>
+
+<style>
+      #freewha {
+         display:none;
+         height:0px;
+         width:0px;
+}
+</style>
+
+<body>
+    <div class="heading">
+        <h1>K-Means Clustering on Image using JavaScript</h1>
+    </div>
+    
+    <table>
+        <th><canvas class="canvas" id="picture-space"></canvas></th>
+        <th><canvas class="canvas" id="res-canvas"></canvas></th>
+        <tr>
+            <td>
+                <center>
+                    <button id="load-img" class="btn-load">Load</button>
+                </center>
+                <h5>The above load operation will not upload the photo to our servers</h5>
+            </td>
+            <td>
+                <center>
+                    <button id="kbutton" class="btn-load">Apply K-Mean</button>
+                    <h5>Appying K-Mean will freeze this tab momentarily, and may take long time to run on high resolution pictures. Stay calm for the output.</h5>
+                </center>
+            </td>
+        </tr>
+    </table>
+
+    <div id="cluster-visualize">
+        <center><h1>Cluster will be shown here</h1></center>        
+    </div>
+
+    <div id="footer-space">
+        <h5>This software is just a basic approach towards showing the working and output of K-Means algorithm. Once the page
+            is loaded, it can also be used offline. To get the code follow
+            <a href="http://github.com/raj96/kmeans_javascript">this link.</a>
+        </h5>
+    </div>
+    <div id="hidden-space" hidden="hidden">
+        <input type="file" id="file-chooser" />
+    </div>
+
+</body>
+<script type="text/javascript" src="magic.js"></script>
+</html>	
