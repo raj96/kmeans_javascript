@@ -65,7 +65,8 @@
     function showKdialog(no_of_clusters) {
         try {
            K = Number(no_of_clusters.toFixed());
-           KMeans.call();
+           setTimeout(KMeans,0);
+           // KMeans.call();
         }
         catch(e) {
             window.alert("Some error occurred.\nType of error: "+e.name);
