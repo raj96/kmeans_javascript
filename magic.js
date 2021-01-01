@@ -67,7 +67,7 @@
            K = Number(no_of_clusters.toFixed());
            (new Promise((resolve,reject) => {
             KMeans();
-           }).then().catch();
+           })).then().catch();
             
            // KMeans.call();
         }
