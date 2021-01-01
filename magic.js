@@ -65,7 +65,11 @@
     function showKdialog(no_of_clusters) {
         try {
            K = Number(no_of_clusters.toFixed());
-           setTimeout(KMeans,0);
+           (new Promise((resolve,reject)=>{
+            KMeans();
+           })
+            .then().catch()
+            
            // KMeans.call();
         }
         catch(e) {
