@@ -235,7 +235,7 @@
         var gsqr = Math.pow((color1.green-color2.green),2);
         var bsqr = Math.pow((color1.blue-color2.blue),2);
     
-        return Number(Math.sqrt(rsqr + gsqr + bsqr).toFixed(5));
+        return Number(Math.sqrt(0.5*rsqr + 0.75*gsqr + bsqr).toFixed(5));
     }
 
     function getIndex(cr,cc,tc) {
